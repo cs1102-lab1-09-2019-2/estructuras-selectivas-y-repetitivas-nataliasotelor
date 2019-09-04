@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+float precio;
+int zona, claro;
+cout<<"zona : ";
+cin>>zona;
+switch(zona){
+    case 1: precio= 212; break;
+    case 2: precio= 170; break;
+    case 3: precio= 136; break;
+    case 4: precio= 59; break;
+    default: cout<<"error";
+}
+cout<<"¿Eres cliente Claro? Si la respuesta es Sí, marque 1. Si la respuesta es No, marque 2.";
+cin>>claro;
+if(claro==1){
+    precio=precio-precio*0.2;
+}
+else if (claro!=0){
+    cout<<"error";
+}
+cout<<"precio: "<<precio<<endl;
+}
